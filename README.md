@@ -1,1 +1,1 @@
-# Gem-Puzzle
+# [# Gem-Puzzle (click)](https://ilyas022.github.io/Gem-Puzzle/)
