@@ -1,0 +1,327 @@
+/* import reset */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside, main {
+  display: block;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html, body {
+  height: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+* a, * button {
+  color: inherit;
+}
+
+/* /import reset */
+@font-face {
+  font-family: Aleo-bold-italic;
+  font-display: swap;
+  src: url("../fonts/Aleo-BoldItalic.woff2") format("woff2"), url("../fonts/Aleo-BoldItalic.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Aleo-regular-italic;
+  font-display: swap;
+  src: url("../fonts/Aleo-Italic.woff2") format("woff2"), url("../fonts/Aleo-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: Aleo-regular;
+  font-display: swap;
+  src: url("../fonts/Aleo-Regular.woff2") format("woff2"), url("../fonts/Aleo-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Aleo-bold;
+  font-display: swap;
+  src: url("../fonts/Aleo-Bold.woff2") format("woff2"), url("../fonts/Aleo-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Magra-bold;
+  font-display: swap;
+  src: url("../fonts/Magra-Bold.woff2") format("woff2"), url("../fonts/Magra-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: RedHatText-medium;
+  font-display: swap;
+  src: url("../fonts/RedHatText-Medium.woff2") format("woff2"), url("../fonts/RedHatText-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: RedHatText-regular;
+  font-display: swap;
+  src: url("../fonts/RedHatText-Regular.woff2") format("woff2"), url("../fonts/RedHatText-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+/* import common */
+._container {
+  width: 100%;
+  max-width: 630px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+._ibg {
+  position: relative;
+  min-width: 400px;
+  min-height: 250px;
+}
+@media (max-width: 991.98px) {
+  ._ibg {
+    min-height: 0;
+    min-width: 0;
+    flex: 1 0 30%;
+    width: 150px;
+  }
+}
+@media (max-width: 479.98px) {
+  ._ibg {
+    width: 155px;
+    height: 130px;
+    flex: 1 0 auto;
+  }
+}
+
+._ibg img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+/* /import common */
+/* import components */
+.button {
+  background-color: #20B2AA;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.button-off {
+  background-color: rgb(185, 102, 102);
+}
+
+/* /import components */
+/* import card */
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  background-color: #f3f2ef;
+  border: 1px solid grey;
+  transition: transform 0.3s;
+}
+.card span {
+  pointer-events: none;
+}
+
+.empty {
+  background-color: lightgrey;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.hovered {
+  background-color: red;
+}
+
+.three-colls {
+  flex-basis: 33.3333333333%;
+}
+
+.four-colls {
+  flex-basis: 25%;
+}
+
+.five-colls {
+  flex-basis: 20%;
+  padding-bottom: 8%;
+  padding-top: 8%;
+}
+
+.six-colls {
+  flex-basis: 16.6666666667%;
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
+
+.seven-colls {
+  flex-basis: 14.2857142857%;
+  padding-top: 6%;
+  padding-bottom: 6%;
+}
+
+.eight-colls {
+  flex-basis: 12.5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+/* /import card */
+/* import animation */
+.to-bottom {
+  transform: translateY(100%);
+}
+
+.to-top {
+  transform: translateY(-100%);
+}
+
+.to-left {
+  transform: translateX(-100%);
+}
+
+.to-right {
+  transform: translateX(100%);
+}
+
+/* /import animation */
+/* import header */
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.info {
+  display: flex;
+  gap: 10px;
+}
+
+.head__buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* /import header */
+/* import body */
+.body {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid grey;
+  background-color: lightgrey;
+  margin-bottom: 20px;
+}
+
+/* /import body */
+/* import footer */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.size {
+  background-color: transparent;
+  font-size: inherit;
+  color: blue;
+  text-decoration: underline;
+}
+
+@media (max-width: 340px) {
+  .footer__sizes {
+    font-size: 16px;
+  }
+}
+
+/* /import footer */
+/* import game */
+.main {
+  font-size: 20px;
+}
+
+.game {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+/* /import game */
