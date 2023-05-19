@@ -1,0 +1,20 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.size {
+  background-color: transparent;
+  font-size: inherit;
+  color: blue;
+  text-decoration: underline;
+}
+
+.footer__sizes {
+  @media (max-width: 340px) {
+    font-size: 16px;
+  }
+}

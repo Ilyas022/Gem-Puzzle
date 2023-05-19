@@ -1,0 +1,57 @@
+// @keyframes to-bottom {
+//   from {
+//     position: relative;
+//     bottom: 0px;
+//   }
+//   to {
+//     position: relative;
+//     bottom: -100%;
+//   }
+// }
+// @keyframes to-top {
+//   from {
+//     position: relative;
+//     top: 0px;
+//   }
+//   to {
+//     position: relative;
+//     top: -100%;
+//   }
+// }
+// @keyframes to-left {
+//   from {
+//     position: relative;
+//     right: 0px;
+//   }
+//   to {
+//     position: relative;
+//     right: 100%;
+//   }
+// }
+// @keyframes to-right {
+//   from {
+//     position: relative;
+//     right: 0px;
+//   }
+//   to {
+//     position: relative;
+//     right: -100%;
+//   }
+// }
+
+.to-bottom {
+  // animation-name: to-bottom;
+  // animation-duration: 1s;
+  // animation-iteration-count: 1;
+  transform: translateY(100%);
+}
+.to-top {
+  transform: translateY(-100%);
+}
+.to-left {
+  transform: translateX(-100%);
+}
+.to-right {
+  transform: translateX(100%);
+}
+

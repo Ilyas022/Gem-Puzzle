@@ -1,0 +1,74 @@
+// ==================================== abstracts ======================================
+
+// import variables 
+@import "abstracts/_variables.scss";
+// import variables 
+
+// ==================================== abstract/ ======================================
+
+// ==================================== base ======================================
+
+/* import reset */
+@import "base/_reset.scss";
+/* /import reset */
+
+// import fonts
+@import "base/_fonts.scss";
+// import fonts
+
+/* import common */
+@import "base/_common.scss";
+/* /import common */
+
+// ==================================== base/ ======================================
+
+// ==================================== components ======================================
+
+/* import components */
+@import "components/_button.scss";
+/* /import components */
+
+/* import card */
+@import "components/_card.scss";
+/* /import card */
+
+/* import animation */
+@import "components/_animation.scss";
+/* /import animation */
+
+// ==================================== components/ ======================================
+
+
+
+// ==================================== layout/ ======================================
+
+/* import header */
+@import "layout/_head.scss";
+/* /import header */
+
+/* import body */
+@import "layout/_body.scss";
+/* /import body */
+
+/* import footer */
+@import "layout/_footer.scss";
+/* /import footer */
+
+// ==================================== layout/ ======================================
+
+
+// ==================================== pages ======================================
+
+/* import game */
+@import "pages/_game.scss";
+/* /import game */
+
+// ==================================== pages/ ======================================
+
+// ==================================== themes ======================================
+
+// ==================================== themes/ ======================================
+
+// ==================================== vendors ======================================
+
+// ==================================== vendors/ ======================================
